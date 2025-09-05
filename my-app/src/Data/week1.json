@@ -1,0 +1,14 @@
+{
+  "Day1": {
+    "topic": "Java Basics",
+    "subtopics": ["Intro", "JDK Setup", "Hello World"]
+  },
+  "Day2": {
+    "topic": "Java Basics",
+    "subtopics": ["Data Types", "Operators"]
+  },
+  "Day3": {
+    "topic": "Java Basics",
+    "subtopics": ["Control Flow", "Loops"]
+  }
+}

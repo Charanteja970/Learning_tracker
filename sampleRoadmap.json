@@ -1,0 +1,33 @@
+{
+  "Java": {
+    "target": 200,
+    "completed": 50,
+    "subtopics": [
+      { "name": "OOP Basics", "target": 50, "completed": 20 },
+      { "name": "Collections", "target": 50, "completed": 15 },
+      { "name": "Generics", "target": 50, "completed": 10 },
+      { "name": "Streams & Lambda", "target": 50, "completed": 5 }
+    ]
+  },
+  "Python": {
+    "target": 150,
+    "completed": 30,
+    "subtopics": [
+      { "name": "Basics", "target": 50, "completed": 10 },
+      { "name": "OOP", "target": 50, "completed": 10 },
+      { "name": "Modules & Libraries", "target": 50, "completed": 10 }
+    ]
+  },
+  "DSA": {
+    "target": 300,
+    "completed": 120,
+    "subtopics": [
+      { "name": "Arrays", "target": 50, "completed": 20 },
+      { "name": "Strings", "target": 50, "completed": 20 },
+      { "name": "Linked List", "target": 50, "completed": 20 },
+      { "name": "Trees", "target": 50, "completed": 20 },
+      { "name": "Graphs", "target": 50, "completed": 20 },
+      { "name": "Dynamic Programming", "target": 50, "completed": 20 }
+    ]
+  }
+}

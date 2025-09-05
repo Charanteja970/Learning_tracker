@@ -1,0 +1,59 @@
+🚀 Project Roadmap (Refreshed)
+✅ Phase 1: Project Setup
+
+ Created Vite + React + TypeScript project
+
+ Installed Tailwind + PostCSS + Autoprefixer
+
+ Tailwind CLI (npx tailwindcss init -p) didn’t work → we fixed it manually by creating:
+
+tailwind.config.js
+
+postcss.config.js
+
+Updated src/index.css
+
+ Test: run npm run dev → should see blue heading (confirming Tailwind works)
+
+ Git initialized & pushed to GitHub
+
+🔜 Phase 2: Core Components
+
+Build AuthForm (login form with icons, validation)
+
+Add ErrorBoundary (handles React crashes gracefully)
+
+Setup reusable UI components (Button, Input, Card)
+
+
+
+
+Phase 3: Routing & Pages
+
+Install react-router-dom
+
+Create pages:
+
+Home
+
+Login
+
+Dashboard
+
+Wire up routes in App.tsx
+
+Phase 4: Dashboard UI
+
+Layout (grid/cards)
+
+Placeholder data or charts
+
+Simulated login → redirects to dashboard
+
+Phase 5: Testing & Deployment
+
+Test locally
+
+Commit & push to GitHub
+
+(Optional) Deploy to Vercel/Netlify
