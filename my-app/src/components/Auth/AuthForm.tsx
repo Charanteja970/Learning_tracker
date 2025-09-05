@@ -8,7 +8,7 @@ interface AuthFormProps {
     email: string,
     password: string,
     confirmPassword?: string
-  ) => { success: boolean; message: string };
+  ) => Promise<{ success: boolean; message: string }>; // 🔹 async support
 }
 
 export default function AuthForm({ mode, onSwitchMode, onSubmit }: AuthFormProps) {
@@ -47,10 +47,10 @@ export default function AuthForm({ mode, onSwitchMode, onSubmit }: AuthFormProps
     return true;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     if (validateForm()) {
-      const result = onSubmit(email, password, confirmPassword);
+      const result = await onSubmit(email, password, confirmPassword); // 🔹 await async
       setMessage({ type: result.success ? "success" : "error", text: result.message });
 
       // 🔹 If signup succeeded → auto-switch to login
@@ -72,9 +72,7 @@ export default function AuthForm({ mode, onSwitchMode, onSubmit }: AuthFormProps
         className="bg-black/40 backdrop-blur-lg p-10 rounded-2xl shadow-xl w-full max-w-md border border-gray-800"
       >
         {/* Branding */}
-        <h1 className="text-3xl font-bold text-white text-center mb-2">
-          Study Helper
-        </h1>
+        <h1 className="text-3xl font-bold text-white text-center mb-2">Study Helper</h1>
         <p className="text-gray-400 text-center mb-6">
           {mode === "login" ? "Please login to continue" : "Create your account"}
         </p>
